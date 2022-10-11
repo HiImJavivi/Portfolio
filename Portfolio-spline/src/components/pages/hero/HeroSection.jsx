@@ -39,7 +39,11 @@ function HeroSection() {
             <CommonButton onClick={() => navigate("/portfolio")}>
               Portfolio
             </CommonButton>
-            <CommonButton>Contact me</CommonButton>
+            <CommonButton
+              onClick={() => window.open(`mailto:javierperez2000s@gmail.com`)}
+            >
+              Contact me
+            </CommonButton>
           </span>
         </div>
       </div>
@@ -48,7 +52,7 @@ function HeroSection() {
 
       <Spline
         height={600}
-        className="z-[-5] fixed top-28 -right-1/4 xl:scale-150 lg:scale-125 md:scale-75 scale-0"
+        className="z-[-5] fixed top-28 -right-1/4 xl:scale-150 lg:scale-125 md:scale-75 md:visible invisible"
         scene="https://prod.spline.design/jMy5GmsSYU-MmwRd/scene.splinecode"
       />
     </div>
