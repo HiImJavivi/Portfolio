@@ -17,12 +17,19 @@ function HeroSection() {
       </div>
       <div className="absolute md:w-16 md:h-auto w-full h-16 bottom-2 left-2 flex md:justify-center justify-start items-center md:flex-col-reverse flex-row gap-5">
         <span className="border-blue-500 md:border-r-2 md:h-32 md:w-0 h-0 w-32 border-t-2"></span>
-        <span>
-          <FaLinkedin className="w-10 h-10 text-white opacity-20 hover:text-blue-600 hover:opacity-50 transition-all duration-200"></FaLinkedin>
-        </span>
-        <span>
-          <FaGithub className="w-10 h-10 text-white opacity-20 hover:text-blue-600 hover:opacity-50 transition-all duration-200"></FaGithub>
-        </span>
+        <a
+          href="https://www.linkedin.com/in/javier-p%C3%A9rez-2a5136239/"
+          target="_blank"
+        >
+          <span>
+            <FaLinkedin className="w-10 h-10 text-white opacity-20 hover:text-blue-600 hover:opacity-50 transition-all duration-200"></FaLinkedin>
+          </span>
+        </a>
+        <a href="https://github.com/HiImJavivi" target="_blank">
+          <span>
+            <FaGithub className="w-10 h-10 text-white opacity-20 hover:text-blue-600 hover:opacity-50 transition-all duration-200"></FaGithub>
+          </span>
+        </a>
       </div>
       <div className="text-white flex flex-col gap-20 md:pl-24 p-4 h-full justify-center w-full md:w-2/3 lg:w-1/2">
         <span>
