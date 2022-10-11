@@ -6,6 +6,9 @@ import logosimple from "../../../assets/Logo_simple.png";
 import CommonButton from "../../Common/CommonButton";
 
 function HeroSection() {
+  const handleContact = () => {
+    window.open(`mailto:javierperez2000s@gmail.com`);
+  };
   const navigate = useNavigate();
   return (
     <div className="w-screen h-screen max-w-screen md:max-h-screen z-10 overflow-hidden">
@@ -39,11 +42,7 @@ function HeroSection() {
             <CommonButton onClick={() => navigate("/portfolio")}>
               Portfolio
             </CommonButton>
-            <CommonButton
-              onClick={() => window.open(`mailto:javierperez2000s@gmail.com`)}
-            >
-              Contact me
-            </CommonButton>
+            <CommonButton onClick={handleContact}>Contact me</CommonButton>
           </span>
         </div>
       </div>
